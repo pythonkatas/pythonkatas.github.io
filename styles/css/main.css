@@ -1,0 +1,33 @@
+/* MAIN STYLE */
+html {
+
+  /* Background Image */
+   background: url(http://graphicdesignjunction.com/wp-content/uploads/2015/04/free_pattern10.jpg) fixed;
+
+   /* Text color */
+   color: white;
+}
+
+/*HEAD TEXT */
+.wellcome {
+  font-style: italic;;
+}
+
+/* DOTTED AFTER HEADER */
+.dotted-line {
+  font-weight: bold;
+  border-bottom: dotted;
+}
+
+/* CHOOSE LANG TEXT */
+.lang-choose {
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* LARGE BTN STYLE IN START PAGE */
+.btn-large-index {
+  margin-right: 7px;
+  margin-left: 7px;
+  border-radius: 25px;
+}
