@@ -1,2 +1,2 @@
 # pythonkatas.github.io
-Python Kata Web Documentation
+Python Kata -- Web Documentation
