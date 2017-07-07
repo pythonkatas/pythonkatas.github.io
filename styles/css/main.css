@@ -31,3 +31,35 @@ html {
   margin-left: 7px;
   border-radius: 25px;
 }
+
+/* HEADER LOGO*/
+#header a{
+  color: white;
+}
+
+#header span {
+  font-size: 22px;
+  border: 1px solid;
+}
+
+/* TEXT CARD */
+.card {
+   color: black;
+ }
+
+
+ /* NAVIGATION HEADER of Page Content */
+#navigation-header{
+    color:#26a69a;
+    font: 22px bold;
+  }
+
+/* CARD LINK */
+.tab a {
+  font-weight: bold;
+}
+
+/* LI SIZE of Page Content*/
+#level li{
+  font-size: 18px;
+}
