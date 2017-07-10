@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Python Katas -- Web Documentation</title>
+		<meta name="author" content="gopjak36">
+
+		<!-- Styles -->
+		<link rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+		<link rel="stylesheet"
+				href="../../../../../styles/css/main.css">
+	</head>
+	<body>
+		<!-- Start Container -->
+		<div class="container">
+
+      <!-- Page Layout here -->
+    <div class="row">
+
+      <!-- Page Logo Start -->
+      <div class="col s12" id="header">
+        <h1><a href="../../../index_ukr.html">Python Katas</a> <span>UKR</span></h1>
+      </div>
+      <!-- Page Logo End -->
+
+      <!-- Page Navigation Start -->
+      <div class="col s12 m4 l3" id="navigation">
+        <div class="collection">
+        <p class="collection-item" id="navigation-header">>Навігація</p>
+        <a href="../median.html" class="collection-item">Median Python</a>
+        <a href="1katas.html" class="collection-item active">1. Katas</a>
+        <a href="#" class="collection-item">2. Katas</a>
+        <a href="#" class="collection-item">3. Katas</a>
+        <a href="1katas.html" class="collection-item">< Повернутися</a>
+      </div>
+      </div>
+      <!-- Page Navigation End -->
+
+      <!-- Page Content Start -->
+      <div class="col s12 m8 l9" id="content">
+        <div class="card">
+
+          <!-- Header of Page Content -->
+          <div class="card-title">
+            <h3>Пояснення Рішення | Вгадати число</h3>
+          </div>
+
+          <!-- Content of Page Content -->
+          <div class="card-content">
+            <h4>1. Katas</h4>
+
+						<iframe src="https://trinket.io/embed/python/89fdc2b934" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+						<ul class="collection with-header">
+							<li class="collection-header"><h4>0.Створюємо рандомноє число:</h4></li>
+							<li class="collection-item">імпортуємо модуль рандома з пітона.</li>
+							<li class="collection-item">ворюємо рандомноє число в діапазоні від 0 до 100.</li>
+							<li class="collection-item">виводимо це рандомноє число на екран щоб в кінці звірити відповідь.</li>
+						</ul>
+
+						<ul class="collection with-header">
+							<li class="collection-header"><h4>1.Створюємо змінні для роботи:</h4></li>
+							<li class="collection-item">low_number, нижня межа пошуку.</li>
+							<li class="collection-item">hight_number, верхня межа пошуку.</li>
+							<li class="collection-item">count, кіль входів в програму.</li>
+						</ul>
+
+
+						<ul class="collection with-header">
+							<li class="collection-header"><h4>2.Переходимо до основної частини програми:</h4></li>
+							<li class="collection-item">1) Використовуємо цикл while, тому що не знае скільки входів в програму нам знадобиться.</li>
+							<li class="collection-item">2) Шукаємо середню кордон, нижньої і верхньої меж</li>
+							<li class="collection-item">3) Перевіряємо чи дорівнює середня межа нашому рандомних числу.</li>
+							<li class="collection-item">4) Якщо так, то виводь на екран що від нас просили.</li>
+							<li class="collection-item">5) Якщо немає, міняємо Наші кордони:
+								<ul class="collection">
+									<li class="collection-item">Якщо середня межа більше рандомних числа, то тоді верхня межа дорівнює середня межа.</li>
+									<li class="collection-item">Якщо середня межа менше рандомних числа, то тоді нижня межа дорівнює середня межа.</li>
+								</ul>
+							</li>
+							<li class="collection-item">6) Повертаємося до 2) пункту, поки 4) не виконається.</li>
+						</ul>
+
+            <p>На цьому і все.</p>
+            <blockquote>Якщо вам сподобалася Katas, можете поставити цій репозиторії зірочку це буде мене в подальшому мотивувати на написання подібних Katas для вас</blockquote>
+
+          <!--Link of Page Content -->
+          <div class="card-tabs">
+            <div class="collection">
+              <p class="collection-item active center-align"> Переходьте на Github строрінку :</p>
+            </div>
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab"><a href="https://github.com/gopjak36/pythonkata/tree/master/ukr/Python%20Katas/2.%20Median%20Python/1.%20Katas/solution">GITHUB</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <!-- Page Content End -->
+
+      <!-- Page Footer Start -->
+      <div class="col s12">
+        <div class="collection">
+          <a href="https://github.com/gopjak36/pythonkata" target="_blank" class="collection-item active">See this project in GitHub</a>
+          <a href="https://github.com/gopjak36" target="_blank" class="collection-item center-align"> Create by gopjak36</a>
+          <a class="collection-item active right-align" href="#header"> © 2017 Python Katas</a>
+        </div>
+      </div>
+      <!-- Page Footer End -->
+
+    </div>
+
+		</div>
+		<!-- End Container -->
+
+		<!-- Javascript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+		<script src="styles/js/main.js"></script>
+	</body>
+</html>
