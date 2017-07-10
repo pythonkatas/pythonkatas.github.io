@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Python Katas -- Web Documentation</title>
+		<meta name="author" content="gopjak36">
+
+		<!-- Styles -->
+		<link rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+		<link rel="stylesheet"
+				href="../../../../../styles/css/main.css">
+	</head>
+	<body>
+		<!-- Start Container -->
+		<div class="container">
+
+      <!-- Page Layout here -->
+    <div class="row">
+
+      <!-- Page Logo Start -->
+      <div class="col s12" id="header">
+        <h1><a href="../../../index_ukr.html">Python Katas</a> <span>UKR</span></h1>
+      </div>
+      <!-- Page Logo End -->
+
+      <!-- Page Navigation Start -->
+      <div class="col s12 m4 l3" id="navigation">
+        <div class="collection">
+        <p class="collection-item" id="navigation-header">>Навігація</p>
+        <a href="../little.html" class="collection-item">Little Python</a>
+        <a href="1katas.html" class="collection-item active">1. Katas</a>
+        <a href="#" class="collection-item">2. Katas</a>
+        <a href="#" class="collection-item">3. Katas</a>
+        <a href="1katas.html" class="collection-item">< Повернутися</a>
+      </div>
+      </div>
+      <!-- Page Navigation End -->
+
+      <!-- Page Content Start -->
+      <div class="col s12 m8 l9" id="content">
+        <div class="card">
+
+          <!-- Header of Page Content -->
+          <div class="card-title">
+            <h3>1. Katas</h3>
+          </div>
+
+          <!-- Content of Page Content -->
+          <div class="card-content">
+            <h4>Пояснення Рішення | Скільки є бобів?</h4>
+
+						<iframe src="https://trinket.io/embed/python/14b733797f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+            <ul class="collection with-header">
+              <li class="collection-header"><h4>1.Створюємо змінні для роботи:</h4></li>
+              <li class="collection-item">s, рядок який треба перевірити.</li>
+              <li class="collection-item">count = 0, лічильник щоб орієнтуватися на якому етапі зараз знаходимося. Це означає, якщо сount = 1, то ми знаємо що у нас є "b _ _ ", якщо сount = 2, то " b o _ " і якщо сount = 3, то " b o b ".</li>
+              <li class="collection-item">bob = 0, кількість бобів які нам зустрілися.</li>
+            </ul>
+
+            <ul class="collection with-header">
+              <li class="collection-header"><h4>2.Переходимо до основної частини програми:</h4></li>
+              <li class="collection-item">Щоб пробігтися по всіх елементах рядка s, а letter це наша поточна буква в рядку s. використовуємо:</li>
+              <li class="collection-item">Перевіряємо яка у нас поточного букву і лічильник. З самого початку ми вказали що нас лічильник дорівнює 0. І тепер, наприклад, якщо ми потрапили на букву "b" і наш лічильник дорівнює 0, то додаємо до лічильника +1, що б коли отримати наступну букву програма розуміла що у нас вже є перша "b". Якщо наступна буква на яку ми потрапляємо на це буква "o", до лічильника знову додаємо +1 і програма розуміє, що тепер у нас є "bo". І далі якщо наступна буква на яку ми потрапляємо це буква "b", то тоді ми додаємо до змінної bob +1 бо розуміємо що зараз маємо рядок "... bob ..." поспіль і ще міняємо значення лічильника на 1, так як це може бути початком іншого бобо, ви ж пам'ятаєте що було написано в примітці. Розглянемо ще такий приклад, коли лічильник дорівнює 1 і поточний символ не дорівнює "o", тоді ми вирушаємо в else, як він працює дивимося в наступному пункті.</li>
+              <li class="collection-item">Тут ми сразу перевіряємо, що поточний символ це "b" і лічильник дорівнює 1, так як кожне "b" може бити початком нового бобу. В іншому іншому випадку ми просто анулюємо наш лічильник.</li>
+            </ul>
+
+
+            <ul class="collection with-header">
+              <li class="collection-header"><h4>3.В самому кінці ввиводим що від нас і було потрібно:</h4></li>
+            </ul>
+
+            <p>На цьому і все.</p>
+            <blockquote>Якщо вам сподобалася Katas, можете поставити цій репозиторії зірочку це буде мене в подальшому мотивувати на написання подібних Katas для вас</blockquote>
+
+          <!--Link of Page Content -->
+          <div class="card-tabs">
+            <div class="collection">
+              <p class="collection-item active center-align"> Переходьте на Github строрінку :</p>
+            </div>
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab"><a href="https://github.com/gopjak36/pythonkata/tree/master/ukr/Python%20Katas/1.%20Little%20Python/1.%20Katas/solution">GITHUB</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <!-- Page Content End -->
+
+      <!-- Page Footer Start -->
+      <div class="col s12">
+        <div class="collection">
+          <a href="https://github.com/gopjak36/pythonkata" target="_blank" class="collection-item active">See this project in GitHub</a>
+          <a href="https://github.com/gopjak36" target="_blank" class="collection-item center-align"> Create by gopjak36</a>
+          <a class="collection-item active right-align" href="#header"> © 2017 Python Katas</a>
+        </div>
+      </div>
+      <!-- Page Footer End -->
+
+    </div>
+
+		</div>
+		<!-- End Container -->
+
+		<!-- Javascript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+		<script src="styles/js/main.js"></script>
+	</body>
+</html>
