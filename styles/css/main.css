@@ -63,3 +63,18 @@ html {
 #level li{
   font-size: 18px;
 }
+
+/* PAGIANTION BUTTON */
+.pag-button a{
+  font-size: 22px;
+}
+
+#right-button{
+  /* Position of button */
+  float: right;
+}
+
+#left-button{
+  /* Position of button */
+  float: left;
+}
