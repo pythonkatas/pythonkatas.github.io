@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Python Katas -- Web Documentation</title>
+		<meta name="author" content="gopjak36">
+
+		<!-- Styles -->
+		<link rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+		<link rel="stylesheet"
+				href="../../../../../styles/css/main.css">
+	</head>
+	<body>
+		<!-- Start Container -->
+		<div class="container">
+
+      <!-- Page Layout here -->
+    <div class="row">
+
+      <!-- Page Logo Start -->
+      <div class="col s12" id="header">
+        <h1><a href="../../../index_en.html">Python Katas</a> <span>EN</span></h1>
+      </div>
+      <!-- Page Logo End -->
+
+      <!-- Page Navigation Start -->
+      <div class="col s12 m4 l3" id="navigation">
+        <div class="collection">
+        <p class="collection-item" id="navigation-header">>Navigation</p>
+        <a href="../little.html" class="collection-item ">Little Python</a>
+        <a href="../1katas/1katas.html" class="collection-item">1. Katas</a>
+        <a href="2katas.html" class="collection-item active" >2. Katas</a>
+        <a href="#" class="collection-item">3. Katas</a>
+        <a href="../../../index_en.html" class="collection-item">< Back</a>
+      </div>
+      </div>
+      <!-- Page Navigation End -->
+
+      <!-- Page Content Start -->
+      <div class="col s12 m8 l9" id="content">
+        <div class="card">
+
+          <!-- Header of Page Content -->
+          <div class="card-title">
+            <h3>Outstanding Balance on the Credit Card</h3>
+          </div>
+
+          <!-- Content of Page Content -->
+          <div class="card-content">
+						<h4>2. Katas</h4>
+
+
+            <h4>Problem:</h4>
+            <p>Write a program that considers the Outstanding Balance on the Credit Card if you pay only the Minimum Payment for a whole year.</p>
+            <p>For this, three variables are given to enter the function:</p>
+						<ol class="collection">
+							<li class="collection-item"><b>outStandingBalance</b> - outstanding balance on credit card.</li>
+							<li class="collection-item"><b>yearlyPercentRate</b> - yearly percent rate.</li>
+							<li class="collection-item"><b>monthlyPercentRate</b> - monthly percent rate.</li>
+						</ol>
+						<div class="collection"><p class="collection-item active"><b>Note:</b> if you want to know how to calculate the outstanding balance after one month, <b>See the section below. Example.</b></p></div>
+
+						<h4>Task:</h4>
+						<p>Write a function that returns such a string: <b>"Remaining Outstanding Balance: b"</b>, where b is the outstanding balance (rounded to the second decimal point) that the function returned.</p>
+						<p><b>!Also</b>, Prints these lines while the function is running:</p>
+						<blockquote>
+							Month 1 Outstanding Balance: b | Minimum payment this month: m</br>
+							...</br>
+							Month 1 Outstanding Balance: b | Minimum payment this month: m</br>
+							</br>
+							when b - Outstanding Balance, а m - Minimum payment this month.
+						</blockquote>
+
+						<h4 id="example">Example:</h4>
+						<p>To calculate the outstanding balance after one month, one must adhere to such an algorithm:</p>
+						<ol class="collection">
+							<li class="collection-item">
+								Consider the minimum payment that we can make in a month:
+								<blockquote><b>minPay = outStandingBalance * monthlyPercentRate</b></blockquote>
+							</li>
+							<li class="collection-item">
+								Consider the balance, after the minimum payment:
+								<blockquote><b>balanceAfterMinPay = outStandingBalance - minPay</b></blockquote>
+							</li>
+							<li class="collection-item">
+								Consider the percentage that we have to pay for using the card per month:
+								<blockquote><b>Percent = (yearlyPercentRate / 12.0) * balanceAfterMinPay</b></blockquote>
+							</li>
+							<li class="collection-item">
+								Consider the outstanding balance at the end of the month:
+								<blockquote><b>outStandingBalance = balanceAfterMinPay + Percent</b></blockquote>
+							</li>
+						</ol>
+						<blockquote>Do not forget that we counted only for one month.</blockquote>
+
+						<h4>Data to verify:</h4>
+						<blockquote>creditCardOutStanding - Function name</blockquote>
+						<ol class="collection">
+							<li class="collection-item">creditCardOutStanding(3329,0.2,0.03) --> <b>"Remaining Outstanding Balance:  2816.55"</b></li>
+							<li class="collection-item">creditCardOutStanding(341,0.12,0.053) --> <b>"Remaining Outstanding Balance:  207.63"</b></li>
+							<li class="collection-item">creditCardOutStanding(168,0.15,0.06) --> <b>"Remaining Outstanding Balance:  92.81"</b></li>
+						</ol>
+            <blockquote>Where "-->" means after starting the program</blockquote>
+
+            <h4>What's next ?</h4>
+            <p><b>The program does not come out or works not exactly</b>,go to the solution folder and look at the explanation for solving the problem, this will help you.</p>
+            <p><b>If you have everything turned out</b>, you can go to the solution package and compare your solution with the one that's there.</p>
+            <blockquote>If your decision does not coincide with my decision, then I'm very happy for you. <b>Please share it with me, I will be very grateful to you and then I will add it to the solution folder.</b> How to add your solution, see here</blockquote>
+
+          <!--Link of Page Content -->
+          <div class="card-tabs">
+            <div class="collection">
+              <p class="collection-item active center-align">See Solution or visit Github page:</p>
+            </div>
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab"><a href="https://github.com/gopjak36/pythonkata/tree/master/en/Python%20Katas/1.%20Little%20Python/2.%20Katas">GITHUB</a></li>
+              <li class="tab"><a href="solution.html">SOLUTION</a></li>
+            </ul>
+          </div>
+
+					<!-- Pagination -->
+					<div class="pag-button">
+						<center><a class="waves-effect waves-light btn" id="left-button" href="../1katas/1katas.html">&larr;</a>	<a class="waves-effect waves-light btn" href="../little.html">&#9776;</a> <a class="waves-effect waves-light btn disabled" id="right-button" >&rarr;</a></center>
+					</div>
+
+        </div>
+      </div>
+      <!-- Page Content End -->
+
+      <!-- Page Footer Start -->
+      <div class="col s12">
+        <div class="collection">
+          <a href="https://github.com/gopjak36/pythonkata" target="_blank" class="collection-item active">See this project in GitHub</a>
+          <a href="https://github.com/gopjak36" target="_blank" class="collection-item center-align"> Create by gopjak36</a>
+          <a class="collection-item active right-align" href="#header"> © 2017 Python Katas</a>
+        </div>
+      </div>
+      <!-- Page Footer End -->
+
+    </div>
+
+		</div>
+		<!-- End Container -->
+
+		<!-- Javascript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+		<script src="styles/js/main.js"></script>
+	</body>
+</html>

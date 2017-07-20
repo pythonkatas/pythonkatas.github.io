@@ -29,11 +29,11 @@
       <div class="col s12 m4 l3" id="navigation">
         <div class="collection">
         <p class="collection-item" id="navigation-header">>Navigation</p>
-        <a href="../guru.html" class="collection-item ">Python Guru</a>
-        <a href="1katas.html" class="collection-item active">1. Katas</a>
-        <a href="../2katas/2katas.html" class="collection-item">2. Katas</a>
+        <a href="../little.html" class="collection-item ">Little Python</a>
+        <a href="../1katas/1katas.html" class="collection-item">1. Katas</a>
+        <a href="2katas.html" class="collection-item active">2. Katas</a>
         <a href="#" class="collection-item">3. Katas</a>
-        <a href="1katas.html" class="collection-item">< Back</a>
+        <a href="2katas.html" class="collection-item">< Back</a>
       </div>
       </div>
       <!-- Page Navigation End -->
@@ -44,29 +44,38 @@
 
           <!-- Header of Page Content -->
           <div class="card-title">
-            <h3>Explanation of the Solution | Converting to a binary number</h3>
+            <h3>Explanation of the Solution | Outstanding Balance on the Credit Card</h3>
           </div>
 
           <!-- Content of Page Content -->
           <div class="card-content">
-						<h4> 1. Katas</h4>
+						<h4>2. Katas</h4>
 
-						<iframe src="https://trinket.io/embed/python/a9b5a1bfd1" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+						<!-- Python code -->
+						<iframe src="https://trinket.io/embed/python/a513f17e41" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-						<ul class="collection with-header">
-							<li class="collection-header"><h4>1.Create variables for work:</h4></li>
-							<li class="collection-item">num, enter our number and check that it is an integer.</li>
-							<li class="collection-item">number, remember our number entered for the final output.</li>
-							<li class="collection-item">binary_num, the string for the binary number.</li>
-							<li class="collection-header"><h4>2.Check whether the number is negative or not.</h4></li>
-							<li class="collection-header"><h4>3.Go to the main part of the program:</h4></li>
-							<li class="collection-item">run the while loop, so we can convert our number to binary.</li>
-							<li class="collection-item">if the negative number is added negative.</li>
-							<li class="collection-header"><h4>4.Display the line as requested.</h4></li>
-						</ul>
+						<!-- link to GitHub Page -->
+						<div class="collection" id="githubpages"><p class="collection-item active">To see full version of Solution visit GitHub. <a href="#githubpage">See below&darr;</a></p></div>
+
+						<!-- Solution Start -->
+						<h4>Solution:</h4>
+						<ol class="collection">
+							<li class="collection-item">Create a function that takes three variables.</li>
+							<li class="collection-item">Create a variable <b>month</b> for the calculation of months, with a value of 1, since we will start from the first month.</li>
+							<li class="collection-item">
+								We pass to the main part of the program:
+								<ul class="collection">
+									<li class="collection-item">We will use the cycle <b>while</b> to run through all the months (from 1 to 12).</li>
+									<li class="collection-item">We consider the outstanding balance after one month and round each time to the second decimal point for a more accurate result.</li>
+									<li class="collection-item">Display the line (by condition) and add to our variable month 1 to go to the next month.</li>
+								</ul>
+							</li>
+							<li class="collection-item">In the final part, we return a string that is given to us by condition.</li>
+						</ol>
 
 						<p>That's all.</p>
 						<blockquote>If you liked Katas, you can put star on this repositories, this will motivate me to write similar Katas for you.</blockquote>
+						<!-- Solution End -->
 
           <!--Link of Page Content -->
           <div class="card-tabs">
@@ -74,13 +83,13 @@
               <p class="collection-item active center-align"> Visit Github page:</p>
             </div>
             <ul class="tabs tabs-fixed-width">
-              <li class="tab"><a href="https://github.com/gopjak36/pythonkata/tree/master/en/Python%20Katas/3.%20Guru%20Python/1.%20Katas/solution">GITHUB</a></li>
+              <li class="tab" id="githubpage"><a href="https://github.com/gopjak36/pythonkata/tree/master/en/Python%20Katas/1.%20Little%20Python/2.%20Katas/solution">GITHUB</a></li>
             </ul>
           </div>
 
 					<!-- Pagination -->
 					<div class="pag-button">
-						<center><a class="waves-effect waves-light btn disabled" id="left-button">&larr;</a>	<a class="waves-effect waves-light btn" href="../guru.html">&#9776;</a> <a class="waves-effect waves-light btn" id="right-button" href="../2katas/2katas.html">&rarr;</a></center>
+						<center><a class="waves-effect waves-light btn" id="left-button" href="../1katas/1katas.html">&larr;</a>	<a class="waves-effect waves-light btn" href="../little.html">&#9776;</a> <a class="waves-effect waves-light btn disabled" id="right-button" >&rarr;</a></center>
 					</div>
 
         </div>

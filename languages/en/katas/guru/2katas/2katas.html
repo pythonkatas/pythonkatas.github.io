@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Python Katas -- Web Documentation</title>
+		<meta name="author" content="gopjak36">
+
+		<!-- Styles -->
+		<link rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+		<link rel="stylesheet"
+				href="../../../../../styles/css/main.css">
+	</head>
+	<body>
+		<!-- Start Container -->
+		<div class="container">
+
+      <!-- Page Layout here -->
+    <div class="row">
+
+      <!-- Page Logo Start -->
+      <div class="col s12" id="header">
+        <h1><a href="../../../index_en.html">Python Katas</a> <span>EN</span></h1>
+      </div>
+      <!-- Page Logo End -->
+
+      <!-- Page Navigation Start -->
+      <div class="col s12 m4 l3" id="navigation">
+        <div class="collection">
+        <p class="collection-item" id="navigation-header">>Navigation</p>
+        <a href="../guru.html" class="collection-item">Python Guru</a>
+        <a href="../1katas/1katas.html" class="collection-item">1. Katas</a>
+        <a href="2katas.html" class="collection-item active">2. Katas</a>
+        <a href="#" class="collection-item">3. Katas</a>
+        <a href="../../../index_en.html" class="collection-item">< Back</a>
+      </div>
+      </div>
+      <!-- Page Navigation End -->
+
+      <!-- Page Content Start -->
+      <div class="col s12 m8 l9" id="content">
+        <div class="card">
+
+          <!-- Header of Page Content -->
+          <div class="card-title">
+            <h3>Minimum Payment for a Credit Card using Binary Search</h3>
+          </div>
+
+          <!-- Content of Page Content -->
+          <div class="card-content">
+						<h4>2. Katas</h4>
+
+						<h4>Problem:</h4>
+            <p>Write a program that considers the Minimum Payment for a Credit Card. Which will pay off the outstanding balance, if you pay it every month for a year.<b>Using Binary Search</b></p>
+						<div class="collection"><p class="collection-item active"><b>Note:</b> Minimum Payment is a fixed amount for all 12 months.</p></div>
+						<p>For this, two variables are given to enter the function:</p>
+						<ol class="collection">
+							<li class="collection-item"><b>outStandingBalance</b> - outstanding balance on credit card.</li>
+							<li class="collection-item"><b>yearlyPercentRate</b> - yearly percent rate.</li>
+						</ol>
+						<div class="collection"><p class="collection-item active"><b>Note:</b> If you want to know how to calculate the outstanding balance after one month without a monthly percent rate, <b>See the section below. Example.</b></p></div>
+
+						<h4>Task:</h4>
+						<p>Write a function that returns such a string: <b>"Minimum Payment every month: b | Count used: c"</b>, where b is the outstanding balance (rounded to the second decimal point) that the function returned and c is the number of attempts the function used to find the minimum payment.</p>
+
+						<h4 id="example">Example:</h4>
+						<p>To find the outstanding balance after one month, you need to adhere to such an algorithm:</p>
+						<ol class="collection">
+							<li class="collection-item">
+								Calculate monthly percent rate:
+								<blockquote><b>monthlyPercentRate = yearlyPersentRate/12</b></blockquote>
+							</li>
+							<li class="collection-item">
+								Calculate lower and upper limit:
+								<blockquote><b>lowerPay = start_balance/12</b></blockquote>
+								<blockquote><b>upperPay = (start_balance * (1 + monthlyPercentRate)**12)/12.0</b></blockquote>
+							</li>
+							<li class="collection-item">
+								Calculate the minimum payment we can make in a month:
+								<blockquote><b>minPay = (upperPay + lowerPay)/2</b></blockquote>
+							</li>
+							<li class="collection-item">
+								Calculate the outstanding balance for one action. For an extensive solution, see <a href="../../little/2katas/2katas.html#example">2.Katas (Little Python)</a>,  following the link:
+								<blockquote><b>utStandingBalance = outStandingBalance - minPay + ((outStandingBalance - minPay) * monthlyPercentRate)</b></blockquote>
+							</li>
+						</ol>
+						<div class="collection"><p class="collection-item active"><b>Note:</b> The main part of the Binary search algorithm, it's up to you.</p></div>
+
+						<h4>Data to verify:</h4>
+						<blockquote>creditCardMinPay_BS - function name</blockquote>
+						<ol class="collection">
+							<li class="collection-item">creditCardMinPay_BS(320000,0.2) --> <b>"Minimum Payment every month: 29157.09 | Count used: 17"</b></li>
+							<li class="collection-item">creditCardMinPay_BS(999999,0.18) --> <b>"Minimum Payment every month: 90325.02 | Count used: 22"</b></li>
+							<li class="collection-item">creditCardMinPay_BS(999999,0.18) --> <b>"Minimum Payment every month: 32809.62 | Count used: 20"</b></li>
+						</ol>
+            <blockquote>where "-->" means after starting the program</blockquote>
+						<div class="collection"><p class="collection-item active"><b>Note:</b> For comparison, you can run one of the values using the program that we did in <a id="collectionActiveLink" href="../../median/2katas/2katas.html">2.Katas (Median Python)</a>. <b>Algorithms is power?</b></p></div>
+
+
+            <h4>What's next ?</h4>
+            <p><b>The program does not come out or works not exactly</b>,go to the solution folder and look at the explanation for solving the problem, this will help you.</p>
+            <p><b>If you have everything turned out</b>, you can go to the solution package and compare your solution with the one that's there.</p>
+            <blockquote>If your decision does not coincide with my decision, then I'm very happy for you. <b>Please share it with me, I will be very grateful to you and then I will add it to the solution folder.</b> How to add your solution, see here</blockquote>
+
+          <!--Link of Page Content -->
+          <div class="card-tabs">
+            <div class="collection">
+              <p class="collection-item active center-align">See Solution or visit Github page:</p>
+            </div>
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab"><a href="https://github.com/gopjak36/pythonkata/tree/master/en/Python%20Katas/3.%20Guru%20Python/2.%20Katas">GITHUB</a></li>
+              <li class="tab"><a href="solution.html">SOLUTION</a></li>
+            </ul>
+          </div>
+
+					<!-- Pagination -->
+					<div class="pag-button">
+						<center><a class="waves-effect waves-light btn" id="left-button" href="../1katas/1katas.html">&larr;</a>	<a class="waves-effect waves-light btn" href="../guru.html">&#9776;</a> <a class="waves-effect waves-light btn disabled" id="right-button">&rarr;</a></center>
+					</div>
+
+        </div>
+      </div>
+      <!-- Page Content End -->
+
+      <!-- Page Footer Start -->
+      <div class="col s12">
+        <div class="collection">
+          <a href="https://github.com/gopjak36/pythonkata" target="_blank" class="collection-item active">See this project in GitHub</a>
+          <a href="https://github.com/gopjak36" target="_blank" class="collection-item center-align"> Create by gopjak36</a>
+          <a class="collection-item active right-align" href="#header"> © 2017 Python Katas</a>
+        </div>
+      </div>
+      <!-- Page Footer End -->
+
+    </div>
+
+		</div>
+		<!-- End Container -->
+
+		<!-- Javascript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+		<script src="styles/js/main.js"></script>
+	</body>
+</html>

@@ -78,3 +78,23 @@ html {
   /* Position of button */
   float: left;
 }
+
+/* LINK TO GITHUB PAGE*/
+#githubpages{
+  font-size: 20px;
+}
+#githubpages p a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* AACTIVE LINK IN COLLECTION */
+#collectionActiveLink{
+  color: white;
+  text-decoration: underline;
+}
+
+/* KATAS LIST LINK */
+.katasLinkList{
+  font-size: 20px;
+}

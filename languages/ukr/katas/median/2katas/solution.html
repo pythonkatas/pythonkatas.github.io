@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Python Katas -- Web Documentation</title>
+		<meta name="author" content="gopjak36">
+
+		<!-- Styles -->
+		<link rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+		<link rel="stylesheet"
+				href="../../../../../styles/css/main.css">
+	</head>
+	<body>
+		<!-- Start Container -->
+		<div class="container">
+
+      <!-- Page Layout here -->
+    <div class="row">
+
+      <!-- Page Logo Start -->
+      <div class="col s12" id="header">
+        <h1><a href="../../../index_ukr.html">Python Katas</a> <span>UKR</span></h1>
+      </div>
+      <!-- Page Logo End -->
+
+      <!-- Page Navigation Start -->
+      <div class="col s12 m4 l3" id="navigation">
+        <div class="collection">
+        <p class="collection-item" id="navigation-header">>Навігація</p>
+        <a href="../median.html" class="collection-item">Median Python</a>
+        <a href="../1katas/1katas.html" class="collection-item">1. Katas</a>
+        <a href="2katas.html" class="collection-item active">2. Katas</a>
+        <a href="#" class="collection-item">3. Katas</a>
+        <a href="2katas.html" class="collection-item">< Повернутися</a>
+      </div>
+      </div>
+      <!-- Page Navigation End -->
+
+      <!-- Page Content Start -->
+      <div class="col s12 m8 l9" id="content">
+        <div class="card">
+
+          <!-- Header of Page Content -->
+          <div class="card-title">
+            <h3>Пояснення Рішення | Мінімальний Платіж для Кредитної Карти</h3>
+          </div>
+
+          <!-- Content of Page Content -->
+          <div class="card-content">
+            <h4>2. Katas</h4>
+
+						<!-- Python code -->
+						<iframe src="https://trinket.io/embed/python/c46aeb3854" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+						<!-- link to GitHub Page -->
+						<div class="collection" id="githubpages"><p class="collection-item active">Щоб побачити повну версію Пояснення завітайте на GitHub. <a href="#githubpage">Дивіться нижче&darr;</a></p></div>
+
+						<!-- Solution Start -->
+						<h4>Рішення:</h4>
+						<ol class="collection">
+							<li class="collection-item">Створюємо функцію, яка приймає дві змінні.</li>
+							<li class="collection-item">
+								Переходимо до частини допоміжних змінних:
+								<ul class="collection">
+									<li class="collection-item"><b>start_balance</b> - для дублювання непогашеного залишок, пізніше це нам стане в нагоді.</li>
+									<li class="collection-item"><b>minPay</b> - мінімальний платіж на даний момент, може і підійде ;)</li>
+									<li class="collection-item"><b>count</b> - для кількості спроб за які програма знайшла мінімальний платіж..</li>
+								</ul>
+							</li>
+							<li class="collection-item">
+								Переходимо до основної частини програми:
+								<ul class="collection">
+									<li class="collection-item">Будемо використовувати цикл <b>while</b>, тому що не знаємо скільки спроб нам знадобиться.</li>
+									<li class="collection-item">
+										Допоміжних змінних в самому циклі:
+										<ul class="collection">
+											<li class="collection-item"><b>month</b> - обнуляємо місяць до стартового значення.</li>
+											<li class="collection-item"><b>OutStandingBalance</b> - обнуляємо непогашений залишок до стартового значення.</li>
+											<li class="collection-item"><b>count</b> - додаємо 1 до кількості спроб.</li>
+										</ul>
+									</li>
+									<li class="collection-item">Застосовуємо алгоритм, який ми розібрали в Прикладі для підрахунку непогашеного залишка після року оплати тільки мінімальним платежем.</li>
+									<li class="collection-item">
+										Перевіряємо непогашений залишок після одного року:
+										<ul class="collection">
+											<li class="collection-item">Якщо він дорівнює або менше 0, то це означає що <b>minPay</b> підібраний правильно і ми повертаємо рядок за умовою.</li>
+											<li class="collection-item">В іншому випадки, додаємо до <b>minPay</b> 10 і починаємо 3 пункт з початку</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ol>
+
+            <p>На цьому і все.</p>
+            <blockquote>Якщо вам сподобалася Katas, можете поставити цій репозиторії зірочку це буде мене в подальшому мотивувати на написання подібних Katas для вас</blockquote>
+
+          <!--Link of Page Content -->
+          <div class="card-tabs">
+            <div class="collection">
+              <p class="collection-item active center-align"> Переходьте на Github строрінку :</p>
+            </div>
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab" id="githubpage"><a href="https://github.com/gopjak36/pythonkata/tree/master/ukr/Python%20Katas/2.%20Median%20Python/2.%20Katas/solution">GITHUB</a></li>
+            </ul>
+          </div>
+
+					<!-- Pagination -->
+					<div class="pag-button">
+						<center><a class="waves-effect waves-light btn" id="left-button" href="../1katas/1katas.html">&larr;</a>	<a class="waves-effect waves-light btn" href="../median.html">&#9776;</a> <a class="waves-effect waves-light btn disabled" id="right-button" >&rarr;</a></center>
+					</div>
+
+        </div>
+      </div>
+      <!-- Page Content End -->
+
+      <!-- Page Footer Start -->
+      <div class="col s12">
+        <div class="collection">
+          <a href="https://github.com/gopjak36/pythonkata" target="_blank" class="collection-item active">See this project in GitHub</a>
+          <a href="https://github.com/gopjak36" target="_blank" class="collection-item center-align"> Create by gopjak36</a>
+          <a class="collection-item active right-align" href="#header"> © 2017 Python Katas</a>
+        </div>
+      </div>
+      <!-- Page Footer End -->
+
+    </div>
+
+		</div>
+		<!-- End Container -->
+
+		<!-- Javascript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+		<script src="styles/js/main.js"></script>
+	</body>
+</html>
