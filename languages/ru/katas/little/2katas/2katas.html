@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Python Katas -- Web Documentation</title>
+		<meta name="author" content="gopjak36">
+
+		<!-- Styles -->
+		<link rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+		<link rel="stylesheet"
+				href="../../../../../styles/css/main.css">
+	</head>
+	<body>
+		<!-- Start Container -->
+		<div class="container">
+
+      <!-- Page Layout here -->
+    <div class="row">
+
+      <!-- Page Logo Start -->
+      <div class="col s12" id="header">
+        <h1><a href="../../../index_ru.html">Python Katas</a> <span>RU</span></h1>
+      </div>
+      <!-- Page Logo End -->
+
+      <!-- Page Navigation Start -->
+      <div class="col s12 m4 l3" id="navigation">
+        <div class="collection">
+        <p class="collection-item" id="navigation-header">>Навигация</p>
+        <a href="../little.html" class="collection-item ">Little Python</a>
+        <a href="../1katas/1katas.html" class="collection-item">1. Katas</a>
+        <a href="2katas.html" class="collection-item active">2. Katas</a>
+        <a href="#" class="collection-item">3. Katas</a>
+        <a href="../../../index_ru.html" class="collection-item">< Назад</a>
+      </div>
+      </div>
+      <!-- Page Navigation End -->
+
+      <!-- Page Content Start -->
+      <div class="col s12 m8 l9" id="content">
+        <div class="card">
+
+          <!-- Header of Page Content -->
+          <div class="card-title">
+            <h3>Непогашенный Остаток на Кредитной Карте</h3>
+          </div>
+
+          <!-- Content of Page Content -->
+          <div class="card-content">
+            <h4>2. Katas</h4>
+
+
+            <h4>Проблема:</h4>
+            <p>Написать программу, которая считает Непогашенный Остаток на Кредитной Карте, если целый год выплачивать только Минимальный Платеж.</p>
+            <p>Для этого дается три переменные на вход в функцию:</p>
+						<ol class="collection">
+							<li class="collection-item"><b>outStandingBalance</b> - непогашенный остатокк на кредитной карте.</li>
+							<li class="collection-item"><b>yearlyPercentRate</b> - годовая процентная ставка.</li>
+							<li class="collection-item"><b>monthlyPercentRate</b> - месячная процентная ставка.</li>
+						</ol>
+						<div class="collection"><p class="collection-item active"><b>Примечание:</b> Если вы хотите узнать, как посчитать непогашенный остаток после одного месяца, <b>смотрите в разделе ниже Пример.</b></p></div>
+
+						<h4>Задача:</h4>
+						<p>Написать функцию, которая возвращает такую строку: <b>"Непогашенный Остаток составляет: b"</b>, где b - непогашенный остаток(округлен до второй цифры после запятой), который вернула функция.</p>
+						<p><b>!Также</b>, печатает вот такие строки во время работы функции:</p>
+						<blockquote>
+							Месяц 1 Непогашенный Остаток: b | Минимальный платеж в этом месяце: m</br>
+							...</br>
+							Месяц 12 Непогашенный Остаток: b | Минимальный платеж в этом месяце: m</br>
+							</br>
+							Где b - непогашенный остаток, а m - минимальный платеж в этом месяце.
+						</blockquote>
+
+						<h4 id="example">Пример:</h4>
+						<p>Чтобы посчитать непогашенный остаток после одного месяца надо придерживаться такого алгоритма:</p>
+						<ol class="collection">
+							<li class="collection-item">
+								Считаем минимальный платеж, который можем сделать в месяце:
+								<blockquote><b>minPay = outStandingBalance * monthlyPercentRate</b></blockquote>
+							</li>
+							<li class="collection-item">
+								Считаем остаток, после минимального платежа:
+								<blockquote><b>balanceAfterMinPay = outStandingBalance - minPay</b></blockquote>
+							</li>
+							<li class="collection-item">
+								Считаем процент, который мы должны заплатить за использование карты в месяц:
+								<blockquote><b>Percent = (yearlyPercentRate / 12.0) * balanceAfterMinPay</b></blockquote>
+							</li>
+							<li class="collection-item">
+								Считаем непогашенный остаток в конце месяца:
+								<blockquote><b>outStandingBalance = balanceAfterMinPay + Percent</b></blockquote>
+							</li>
+						</ol>
+						<blockquote>Не забывайте что мы посчитали только для одного месяца.</blockquote>
+
+						<h4>Данные для проверки:</h4>
+						<blockquote>creditCardOutStanding - название функции</blockquote>
+						<ol class="collection">
+							<li class="collection-item">creditCardOutStanding(3329,0.2,0.03) --> <b>"Непогашенный Остаток составляет:  2816.55"</b></li>
+							<li class="collection-item">creditCardOutStanding(341,0.12,0.053) --> <b>"Непогашенный Остаток составляет:  207.63"</b></li>
+							<li class="collection-item">creditCardOutStanding(168,0.15,0.06) --> <b>"Непогашенный Остаток составляет:  92.81"</b></li>
+						</ol>
+            <blockquote>где "-->" означает после запуска программы</blockquote>
+
+            <h4>Что дальше ?:</h4>
+            <p><b>Программа не выходит или работает не совсем точно</b>, перейдите по ссылке solution и помотрите объяснение к решению проблемы, это вам поможет.</p>
+            <p><b>Если у вас все вышло</b>, можете перейти по ссылке solution и сравнить свое решение с тем которое там есть.</p>
+            <blockquote>Если ваше решение не совпадает с моим решение, то я за вас очень рад. <b>Поделитесь им со мной, я буду вам очень боагодарен и тогда я добавлю его в папку solution.</b> Как добавить свое решение смотрите тут.</blockquote>
+
+          <!--Link of Page Content -->
+          <div class="card-tabs">
+            <div class="collection">
+              <p class="collection-item active center-align"> Посмотрте решение или перейдите на Github страницу :</p>
+            </div>
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab"><a href="https://github.com/gopjak36/pythonkata/tree/master/ru/Python%20Katas/1.%20Little%20Python/2.%20Katas">GITHUB</a></li>
+              <li class="tab"><a href="solution.html">SOLUTION</a></li>
+            </ul>
+          </div>
+
+					<!-- Pagination -->
+					<div class="pag-button">
+						<center><a class="waves-effect waves-light btn" id="left-button" href="../1katas/1katas.html">&larr;</a>	<a class="waves-effect waves-light btn" href="../little.html">&#9776;</a> <a class="waves-effect waves-light btn disabled" id="right-button" >&rarr;</a></center>
+					</div>
+
+        </div>
+      </div>
+      <!-- Page Content End -->
+
+      <!-- Page Footer Start -->
+      <div class="col s12">
+        <div class="collection">
+          <a href="https://github.com/gopjak36/pythonkata" target="_blank" class="collection-item active">See this project in GitHub</a>
+          <a href="https://github.com/gopjak36" target="_blank" class="collection-item center-align"> Create by gopjak36</a>
+          <a class="collection-item active right-align" href="#header"> © 2017 Python Katas</a>
+        </div>
+      </div>
+      <!-- Page Footer End -->
+
+    </div>
+
+		</div>
+		<!-- End Container -->
+
+		<!-- Javascript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+		<script src="styles/js/main.js"></script>
+	</body>
+</html>
