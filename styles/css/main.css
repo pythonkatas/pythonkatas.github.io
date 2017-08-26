@@ -98,3 +98,8 @@ html {
 .katasLinkList{
   font-size: 20px;
 }
+
+/* LI in UL (active)*/
+#in-the-function li {
+  color: black;
+}
