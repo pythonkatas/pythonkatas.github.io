@@ -29,10 +29,10 @@
       <div class="col s12 m4 l3" id="navigation">
         <div class="collection">
         <p class="collection-item" id="navigation-header">>Navigation</p>
-        <a href="../guru.html" class="collection-item ">Python Guru</a>
+        <a href="../little.html" class="collection-item ">Little Python</a>
         <a href="../1katas/1katas.html" class="collection-item">1. Katas</a>
-        <a href="2katas.html" class="collection-item active">2. Katas</a>
-        <a href="#" class="collection-item">3. Katas</a>
+        <a href="../2katas/2katas.html" class="collection-item">2. Katas</a>
+        <a href="2katas.html" class="collection-item active">3. Katas</a>
         <a href="2katas.html" class="collection-item">< Back</a>
       </div>
       </div>
@@ -44,15 +44,15 @@
 
           <!-- Header of Page Content -->
           <div class="card-title">
-            <h3>Explanation of the Solution | Minimum Payment for a Credit Card using Binary Search</h3>
+            <h3>Explanation of the Solution | Text without multiple spaces</h3>
           </div>
 
           <!-- Content of Page Content -->
           <div class="card-content">
-						<h4>2. Katas</h4>
+						<h4>3. Katas</h4>
 
 						<!-- Python code -->
-						<iframe src="https://trinket.io/embed/python/fc18c13082" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+						<iframe src="https://trinket.io/embed/python/9e7237b15b" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 						<!-- link to GitHub Page -->
 						<div class="collection" id="githubpages"><p class="collection-item active">To see full version of Solution visit GitHub. <a href="#githubpage">See below&darr;</a></p></div>
@@ -60,46 +60,58 @@
 						<!-- Solution Start -->
 						<h4>Solution:</h4>
 						<ol class="collection">
-							<li class="collection-item">Create a function that takes two variables.</li>
 							<li class="collection-item">
-								We pass to a part of the help variables:
+								The first function:
 								<ul class="collection">
-									<li class="collection-item"><b>start_balance</b> - to duplicate the outstanding balance, later it will come in handy.</li>
-									<li class="collection-item"><b>monthlyPercentRate</b> - monthly percent rate.</li>
-									<li class="collection-item"><b>lowerPay</b> - lower limit of payment.</li>
-									<li class="collection-item"><b>upperPay</b> - upper limit of payment.</li>
-									<li class="collection-item"><b>epsilon</b> - comparison variable.</li>
-									<li class="collection-item"><b>count</b> - for the number of attempts for which the program has found the minimum payment.</li>
+									<li class="collection-item">Create a function with two variables to enter (the text you want to write and the file to write), which will write the text to the file.</li>
+									<li class="collection-item active" id="in-the-function">
+										In the function:
+										<ul class="collection">
+											<li class="collection-item">Open the file for writing.</li>
+											<li class="collection-item">Write down the text.</li>
+											<li class="collection-item">Close the file for writing.</li>
+										</ul>
+									</li>
 								</ul>
 							</li>
 							<li class="collection-item">
-								We pass to the main part of the program:
+								The second function:
 								<ul class="collection">
-									<li class="collection-item">We will use the cycle <b>while</b>, since we do not know how many attempts we will need.</li>
-									<li class="collection-item">
-										Help variables in the cycle itself:
-										<ul class="collection">
-											<li class="collection-item"><b>minPay</b> - minimum payment at the moment.</li>
-											<li class="collection-item"><b>OutStandingBalance</b> - original outstanding balance.</li>
-											<li class="collection-item"><b>count</b> - add 1 to the number of attempts.</li>
+									<li class="collection-item">Create a function with one variable to enter (file), which will remove multiple spaces.</li>
+									<li class="collection-item active">
+										In the function:
+										<ul class="collection" id="in-the-function">
+											<li class="collection-item">Open the file.</li>
+											<li class="collection-item">Create a variable for words in the form of an empty dictionary.</li>
+											<li class="collection-item">We run through all the lines of the file.</li>
+											<li class="collection-item">We run through all the words of the line.</li>
+											<li class="collection-item">Adding a word to the list for words.</li>
+											<li class="collection-item">Create a variable in which we immediately add all words from the list for words in the form of a string.</li>
+											<li class="collection-item">Close the file.</li>
+											<li class="collection-item">Return a string with all the words.</li>
 										</ul>
 									</li>
-									<li class="collection-item">Apply the algorithm, which we disassembled in Example.</li>
-									<li class="collection-item">
-										Check the outstanding balance after one year:
-										<ul class="collection">
-											<li class="collection-item">If it is larger than <b>epsilon</b>, then we change the lower limit to <b>minPay</b> and we return to item 3.</li>
-											<li class="collection-item">If it is smaller than <b>epsilon</b>, then we change the upper limit to <b>minPay</b> and we return to item 3.</li>
-											<li class="collection-item">In other cases, we exit the cycle</li>
-										</ul>
-									</li>
-									<li class="collection-item">Round <b>minPay</b> up to the second digit after the comma and return the string by condition</li>
+								</ul>
+							</li>
+							<li class="collection-item">
+								Create variables for files:
+								<ul class="collection">
+									<li class="collection-item">The file from which we read the text.</li>
+									<li class="collection-item">The file into which we write the text.</li>
+								</ul>
+							</li>
+							<li class="collection-item">
+								Main part:
+								<ul class="collection">
+									<li class="collection-item">We get a string with words from the first file using the function.</li>
+									<li class="collection-item">We add a line that we got to a file for writing to a function that writes to a file.</li>
 								</ul>
 							</li>
 						</ol>
 
 						<p>That's all.</p>
 						<blockquote>If you liked Katas, you can put star on this repositories, this will motivate me to write similar Katas for you.</blockquote>
+						<!-- Solution End -->
 
           <!--Link of Page Content -->
           <div class="card-tabs">
@@ -107,13 +119,13 @@
               <p class="collection-item active center-align"> Visit Github page:</p>
             </div>
             <ul class="tabs tabs-fixed-width">
-              <li class="tab" id="githubpage"><a href="https://github.com/gopjak36/pythonkata/tree/master/en/Python%20Katas/3.%20Guru%20Python/2.%20Katas/solution">GITHUB</a></li>
+              <li class="tab" id="githubpage"><a href="https://github.com/gopjak36/pythonkata/tree/master/en/Python%20Katas/1.%20Little%20Python/3.%20Katas/solution">GITHUB</a></li>
             </ul>
           </div>
 
 					<!-- Pagination -->
 					<div class="pag-button">
-						<center><a class="waves-effect waves-light btn" id="left-button" href="../1katas/1katas.html">&larr;</a>	<a class="waves-effect waves-light btn" href="../guru.html">&#9776;</a> <a class="waves-effect waves-light btn disabled" id="right-button">&rarr;</a></center>
+						<center><a class="waves-effect waves-light btn" id="left-button" href="../2katas/2katas.html">&larr;</a>	<a class="waves-effect waves-light btn" href="../little.html">&#9776;</a> <a class="waves-effect waves-light btn disabled" id="right-button" >&rarr;</a></center>
 					</div>
 
         </div>
