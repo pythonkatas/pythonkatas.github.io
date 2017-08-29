@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Python Katas -- Web Documentation</title>
+		<meta name="author" content="gopjak36">
+
+		<!-- Styles -->
+		<link rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+		<link rel="stylesheet"
+				href="../../../../../styles/css/main.css">
+	</head>
+	<body>
+		<!-- Start Container -->
+		<div class="container">
+
+      <!-- Page Layout here -->
+    <div class="row">
+
+      <!-- Page Logo Start -->
+      <div class="col s12" id="header">
+        <h1><a href="../../../index_en.html">Python Katas</a> <span>EN</span></h1>
+      </div>
+      <!-- Page Logo End -->
+
+      <!-- Page Navigation Start -->
+      <div class="col s12 m4 l3" id="navigation">
+        <div class="collection">
+        <p class="collection-item" id="navigation-header">>Navigation</p>
+        <a href="../median.html" class="collection-item ">Median Python</a>
+        <a href="../1katas/1katas.html" class="collection-item">1. Katas</a>
+        <a href="../2katas/2katas.html" class="collection-item">2. Katas</a>
+        <a href="3katas.html" class="collection-item active">3. Katas</a>
+        <a href="3katas.html" class="collection-item">< Back</a>
+      </div>
+      </div>
+      <!-- Page Navigation End -->
+
+      <!-- Page Content Start -->
+      <div class="col s12 m8 l9" id="content">
+        <div class="card">
+
+          <!-- Header of Page Content -->
+          <div class="card-title">
+            <h3>Explanation of the Solution | Search for products in a file</h3>
+          </div>
+
+          <!-- Content of Page Content -->
+          <div class="card-content">
+						<h4>3. Katas</h4>
+
+						<!-- Python code -->
+						<iframe src="https://trinket.io/embed/python/3a28cc993b" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+						<!-- link to GitHub Page -->
+						<div class="collection" id="githubpages"><p class="collection-item active">To see full version of Solution visit GitHub. <a href="#githubpage">See below&darr;</a></p></div>
+
+						<!-- Solution Start -->
+						<h4>Solution:</h4>
+						<ol class="collection">
+							<li class="collection-item">
+								First function:
+								<ul class="collection">
+									<li class="collection-item">Create a function with one variable to enter (file name), which will convert the text of the file into a convenient format to see the list.</li>
+									<li class="collection-item active" id="in-the-function">
+										In the function:
+										<ul class="collection">
+											<li class="collection-item">Open the file.</li>
+											<li class="collection-item">Declare auxiliary variables.</li>
+											<li class="collection-item">We run through the entire file and add the lines to the list and more to the list, making a list in the list.</li>
+											<li class="collection-item">Close the file.</li>
+											<li class="collection-item">Return the list with the data.</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="collection-item">
+								Second function:
+								<ul class="collection">
+									<li class="collection-item">Create a function with two variables to enter (the name of the product we are looking for and the name of the file), which will return all the necessary data for the search for the goods.</li>
+									<li class="collection-item active">
+										In the function:
+										<ul class="collection" id="in-the-function">
+											<li class="collection-item">Call the first function to get the necessary data from the file as a list.</li>
+											<li class="collection-item">Declare auxiliary variables in which we will write down all the necessary information.</li>
+											<li class="collection-item">We run through the list and search for the name of the product, which must be found and remember the necessary data.</li>
+											<li class="collection-item">Return the tuple with three variables.</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="collection-item">Create a variable for the file from which we will read the information</li>
+							<li class="collection-item">
+								Main part:
+								<ul class="collection">
+									<li class="collection-item">Create a variable to enter the name of the product for search.</li>
+									<li class="collection-item">And one more change in which we write down our second function.</li>
+								</ul>
+							</li>
+							<li class="collection-item">
+								Final printing:
+								<ul class="collection">
+									<li class="collection-item">We turn the list of countries into one line for printing.</li>
+									<li class="collection-item">Print the required row by condition.</li>
+								</ul>
+							</li>
+						</ol>
+
+						<p>That's all.</p>
+						<blockquote>If you liked Katas, you can put star on this repositories, this will motivate me to write similar Katas for you.</blockquote>
+
+          <!--Link of Page Content -->
+          <div class="card-tabs">
+            <div class="collection">
+              <p class="collection-item active center-align"> Visit Github page:</p>
+            </div>
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab" id="githubpage"><a href="https://github.com/gopjak36/pythonkata/tree/master/en/Python%20Katas/2.%20Median%20Python/3.%20Katas/solution">GITHUB</a></li>
+            </ul>
+          </div>
+
+					<!-- Pagination -->
+					<div class="pag-button">
+						<center><a class="waves-effect waves-light btn" id="left-button" href="../2katas/2katas.html">&larr;</a>	<a class="waves-effect waves-light btn" href="../median.html">&#9776;</a> <a class="waves-effect waves-light btn disabled" id="right-button">&rarr;</a></center>
+					</div>
+
+        </div>
+      </div>
+      <!-- Page Content End -->
+
+      <!-- Page Footer Start -->
+      <div class="col s12">
+        <div class="collection">
+          <a href="https://github.com/gopjak36/pythonkata" target="_blank" class="collection-item active">See this project in GitHub</a>
+          <a href="https://github.com/gopjak36" target="_blank" class="collection-item center-align"> Create by gopjak36</a>
+          <a class="collection-item active right-align" href="#header"> © 2017 Python Katas</a>
+        </div>
+      </div>
+      <!-- Page Footer End -->
+
+    </div>
+
+		</div>
+		<!-- End Container -->
+
+		<!-- Javascript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+		<script src="styles/js/main.js"></script>
+	</body>
+</html>
