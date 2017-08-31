@@ -29,10 +29,10 @@
       <div class="col s12 m4 l3" id="navigation">
         <div class="collection">
         <p class="collection-item" id="navigation-header">>Навигация</p>
-        <a href="../guru.html" class="collection-item ">Python Guru</a>
-        <a href="1katas.html" class="collection-item active">1. Katas</a>
+        <a href="../guru.html" class="collection-item ">Python Median</a>
+        <a href="../1katas/1katas.html" class="collection-item">1. Katas</a>
         <a href="../2katas/2katas.html" class="collection-item">2. Katas</a>
-        <a href="../3katas/3katas.html" class="collection-item">3. Katas</a>
+        <a href="3katas.html" class="collection-item active">3. Katas</a>
         <a href="../../../index_ru.html" class="collection-item">< Назад</a>
       </div>
       </div>
@@ -44,23 +44,41 @@
 
           <!-- Header of Page Content -->
           <div class="card-title">
-            <h3>Угадать число</h3>
+            <h3>Поиск товаров в файле</h3>
           </div>
 
           <!-- Content of Page Content -->
           <div class="card-content">
-            <h4>1. Katas</h4>
+            <h4>3. Katas</h4>
 
 
-            <h4>Проблема:</h4>
-            <p>Есть одно целое рандомное число от 0 до 100. Надо найти его.</p>
-            <blockquote><b>Примечание:</b> совершить поиск надо с помощью Двоичного поиска.</blockquote>
+						<h4>Проблема:</h4>
+            <p>Дается файл (txt формата) в котором есть информация о продуктах: название, страна в которую товар экспортируется и объем в котором импортируется.</p>
+						<div class="collection">
+							<p class="collection-item active"><b>Приклад файлу:</b><br/>
+								Название1 Страна1 Объем1<br/>
+								Название2 Страна2 Объем2<br/>
+								....      ....    ....<br/>
+							</p>
+						</div>
 
-            <h4>Задача:</h4>
-            <p>Вывести на экран строку: "Рандомное число это: r Использовано входов : c ", где r рандомное число которое нашли ,и с количество входом которые понадобились для поиска рандомного числа.</p>
 
-            <h4>Данные для проверки:</h4>
-            <p>Проверкой тут может служить, вывод рандомного числа на екран и проверка его с ответом, которую дает программа.</p>
+						<h4>Задача:</h4>
+						<p>Написать программу, которая ищет товар из файла по названию и возвращает такую строку:</br/></br/>
+							 <b>"Товар: N; Страны для экспорта: C1, C2,..; Объем: P;"</b>, где N - название товара, [C1,C2,..] -с траны в которые экспортируется товар, P - общий объем со всех стран.
+						</p>
+						<p><b>!Совет</b>, попробуйте это сделать с помощью функций (это научит вас разберать программу на небольшие части и использование их несколько раз без копирование кода в отличии от линейных программ).</p>
+
+						<h4>Данные для проверки:</h4>
+						<p>Зайдите в папку data в которой вы найдете txt файлы для проверки, результаты должны быть такими:</p>
+						<blockquote>где (Название) означает название товара для поиска.</blockquote>
+						<ol class="collection">
+							<li class="collection-item">data1.txt (Название1) --> <b>"Товар: Название1; Страны для экспорта: Страна1; Объем: 14;"</b></li>
+							<li class="collection-item">data2.txt (Название1) --> <b>"Товар: Название1; Страны для экспорта: Страна1 Страна2 Страна3; Объем: 148;""</b></li>
+							<li class="collection-item">data3.txt (Название2) --> <b>"Товар: Название2; Страны для экспорта: Страна2 Страна3 Страна4 ; Объем: 331;</b></li>
+						</ol>
+            <blockquote>де "->" означає після запуску програми</blockquote>
+
             <h4>Что дальше ?:</h4>
             <p><b>Программа не выходит или работает не совсем точно</b>, перейдите по ссылке solution и помотрите объяснение к решению проблемы, это вам поможет.</p>
             <p><b>Если у вас все вышло</b>, можете перейти по ссылке solution и сравнить свое решение с тем которое там есть.</p>
@@ -72,14 +90,14 @@
               <p class="collection-item active center-align"> Посмотрте решение или перейдите на Github страницу :</p>
             </div>
             <ul class="tabs tabs-fixed-width">
-              <li class="tab"><a href="https://github.com/gopjak36/pythonkata/tree/master/ru/Python%20Katas/2.%20Median%20Python/1.%20Katas">GITHUB</a></li>
+              <li class="tab" ><a href="https://github.com/gopjak36/pythonkata/tree/master/ru/Python%20Katas/2.%20Median%20Python/3.%20Katas">GITHUB</a></li>
               <li class="tab"><a href="solution.html">SOLUTION</a></li>
             </ul>
           </div>
 
 					<!-- Pagination -->
 					<div class="pag-button">
-						<center><a class="waves-effect waves-light btn disabled" id="left-button">&larr;</a>	<a class="waves-effect waves-light btn" href="../median.html">&#9776;</a> <a class="waves-effect waves-light btn" id="right-button" href="../2katas/2katas.html">&rarr;</a></center>
+						<center><a class="waves-effect waves-light btn" id="left-button" href="../2katas/2katas.html">&larr;</a>	<a class="waves-effect waves-light btn" href="../median.html">&#9776;</a> <a class="waves-effect waves-light btn disabled" id="right-button" >&rarr;</a></center>
 					</div>
 
         </div>
