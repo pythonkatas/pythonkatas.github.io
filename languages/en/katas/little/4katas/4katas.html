@@ -31,9 +31,9 @@
         <p class="collection-item" id="navigation-header">>Navigation</p>
         <a href="../little.html" class="collection-item ">Little Python</a>
         <a href="../1katas/1katas.html" class="collection-item">1. Katas</a>
-        <a href="2katas.html" class="collection-item active" >2. Katas</a>
-        <a href="../3katas/3katas.html" class="collection-item">3. Katas</a>
-				<a href="../4katas/4katas.html" class="collection-item">4. Katas</a>
+        <a href="../2katas/2katas.html" class="collection-item" >2. Katas</a>
+				<a href="../3katas/3katas.html" class="collection-item" >3. Katas</a>
+        <a href="4katas.html" class="collection-item active">4. Katas</a>
         <a href="../../../index_en.html" class="collection-item">< Back</a>
       </div>
       </div>
@@ -45,65 +45,62 @@
 
           <!-- Header of Page Content -->
           <div class="card-title">
-            <h3>Outstanding Balance on the Credit Card</h3>
+            <h3>Classes and files</h3>
           </div>
 
           <!-- Content of Page Content -->
           <div class="card-content">
-						<h4>2. Katas</h4>
+						<h4>4. Katas</h4>
 
 
             <h4>Problem:</h4>
-            <p>Write a program that considers the Outstanding Balance on the Credit Card if you pay only the Minimum Payment for a whole year.</p>
-            <p>For this, three variables are given to enter the function:</p>
-						<ol class="collection">
-							<li class="collection-item"><b>outStandingBalance</b> - outstanding balance on credit card.</li>
-							<li class="collection-item"><b>yearlyPercentRate</b> - yearly percent rate.</li>
-							<li class="collection-item"><b>monthlyPercentRate</b> - monthly percent rate.</li>
-						</ol>
-						<div class="collection"><p class="collection-item active"><b>Note:</b> if you want to know how to calculate the outstanding balance after one month, <b>See the section below. Example.</b></p></div>
+						<ul class="collection">
+							<li class="collection-item">
+            		We have a string in <b>lower case</b>, you need to get two lines one with the other's vowels with consonants, which will be written to the files. All this must be done with the help of one class and called in this form:<br/><br/>
+								<b>print(VowelsClass('some string'))</b><br/>
+								<blockquote><i>where VowelsClass - class name</i></blockquote>
+							</li>
+						</ul>
+
 
 						<h4>Task:</h4>
-						<p>Write a function that returns such a string: <b>"Remaining Outstanding Balance: b"</b>, where b is the outstanding balance (rounded to the second decimal point) that the function returned.</p>
-						<p><b>!Also</b>, Prints these lines while the function is running:</p>
-						<blockquote>
-							Month 1 Outstanding Balance: b | Minimum payment this month: m</br>
-							...</br>
-							Month 1 Outstanding Balance: b | Minimum payment this month: m</br>
-							</br>
-							when b - Outstanding Balance, а m - Minimum payment this month.
-						</blockquote>
-
-						<h4 id="example">Example:</h4>
-						<p>To calculate the outstanding balance after one month, one must adhere to such an algorithm:</p>
-						<ol class="collection">
+						<ul class="collection">
 							<li class="collection-item">
-								Consider the minimum payment that we can make in a month:
-								<blockquote><b>minPay = outStandingBalance * monthlyPercentRate</b></blockquote>
+								As you understand with the title, your task will be to write a class. Which will convert the string to a string with vowels and separately with consonants, and write them to files. Also With a Print Class, as shown in the Problem above, it should issue the following text:<br/><br/>
+									<b>String: 'string'<br/>
+									Without vowels 'strng'; Write to file --> 'with_vowels.txt'<br/>
+									Without consonants 'i'; Write to file --> 'without_vowels.txt'</b>
 							</li>
-							<li class="collection-item">
-								Consider the balance, after the minimum payment:
-								<blockquote><b>balanceAfterMinPay = outStandingBalance - minPay</b></blockquote>
-							</li>
-							<li class="collection-item">
-								Consider the percentage that we have to pay for using the card per month:
-								<blockquote><b>Percent = (yearlyPercentRate / 12.0) * balanceAfterMinPay</b></blockquote>
-							</li>
-							<li class="collection-item">
-								Consider the outstanding balance at the end of the month:
-								<blockquote><b>outStandingBalance = balanceAfterMinPay + Percent</b></blockquote>
-							</li>
-						</ol>
-						<blockquote>Do not forget that we counted only for one month.</blockquote>
+						</ul>
 
 						<h4>Data to verify:</h4>
-						<blockquote>creditCardOutStanding - Function name</blockquote>
-						<ol class="collection">
-							<li class="collection-item">creditCardOutStanding(3329,0.2,0.03) --> <b>"Remaining Outstanding Balance:  2816.55"</b></li>
-							<li class="collection-item">creditCardOutStanding(341,0.12,0.053) --> <b>"Remaining Outstanding Balance:  207.63"</b></li>
-							<li class="collection-item">creditCardOutStanding(168,0.15,0.06) --> <b>"Remaining Outstanding Balance:  92.81"</b></li>
-						</ol>
-            <blockquote>Where "-->" means after starting the program</blockquote>
+						<blockquote>VowelsClass() - class name</blockquote>
+						<ul class="collection">
+
+							<li class="collection-item">
+								VowelsClass('some word in on string') --><br/><br/>
+								<b>String: 'some word in on string'<br/>
+    						Without vowels 'sm wrd in n strng'; Write to file --> 'with_vowels.txt'<br/>
+    						Without consonants 'oe o i o i'; Write to file --> 'without_vowels.txt'<br/></b>
+							</li>
+
+							<li class="collection-item">
+								VowelsClass('one, two, three, four, five, six, ...') --><br/><br/>
+								<b>
+									String: 'one, two, three, four, five, six, ...'<br/>
+	    						Without vowels 'on, tw, thr, fr, fv, sx, ...'; Write to file --> 'with_vowels.txt'<br/>
+	    						Without consonants 'e, o, ee, ou, ie, i, ...'; Write to file --> 'without_vowels.txt'<br/></b>
+							</li>
+
+							<li class="collection-item">
+								VowelsClass('I'm an independent string') --><br/><br/>
+								<b>String: 'I'm an independent string'<br/>
+    						Without vowels ''m n ndpndnt strng'; Write to file --> 'with_vowels.txt'<br/>
+    						Without consonants 'I' a ieee i'; Write to file --> 'without_vowels.txt'<br/></b>
+							</li>
+
+						</ul>
+						<blockquote>Where "-->" means after starting the program</blockquote>
 
             <h4>What's next ?</h4>
             <p><b>The program does not come out or works not exactly</b>,go to the solution folder and look at the explanation for solving the problem, this will help you.</p>
@@ -116,14 +113,14 @@
               <p class="collection-item active center-align">See Solution or visit Github page:</p>
             </div>
             <ul class="tabs tabs-fixed-width">
-              <li class="tab"><a href="https://github.com/gopjak36/pythonkata/tree/master/en/Python%20Katas/1.%20Little%20Python/2.%20Katas">GITHUB</a></li>
+              <li class="tab"><a href="https://github.com/gopjak36/pythonkata/tree/master/en/Python%20Katas/1.%20Little%20Python/4.%20Katas">GITHUB</a></li>
               <li class="tab"><a href="solution.html">SOLUTION</a></li>
             </ul>
           </div>
 
 					<!-- Pagination -->
 					<div class="pag-button">
-						<center><a class="waves-effect waves-light btn" id="left-button" href="../1katas/1katas.html">&larr;</a>	<a class="waves-effect waves-light btn" href="../little.html">&#9776;</a> <a class="waves-effect waves-light btn" id="right-button" href="../3katas/3katas.html" >&rarr;</a></center>
+						<center><a class="waves-effect waves-light btn" id="left-button" href="../3katas/3katas.html">&larr;</a>	<a class="waves-effect waves-light btn" href="../little.html">&#9776;</a> <a class="waves-effect waves-light btn disabled" id="right-button" >&rarr;</a></center>
 					</div>
 
         </div>
